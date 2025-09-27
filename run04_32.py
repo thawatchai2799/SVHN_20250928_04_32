@@ -153,8 +153,8 @@ import scipy.io as sio
 import numpy as np
 
 # โหลดข้อมูลจากไฟล์ .mat
-train_data = sio.loadmat('train_32x32.mat')
-test_data = sio.loadmat('test_32x32.mat')
+train_data = sio.loadmat('../train_32x32.mat')
+test_data = sio.loadmat('../test_32x32.mat')
 
 # ข้อมูลในไฟล์ .mat อยู่ใน key 'X' สำหรับภาพ, 'y' สำหรับ labels
 
@@ -199,19 +199,19 @@ activations_list = {
 
     'GELU': tf.nn.gelu,
     "LSGELUS150": lsgelus150,  # LSGELU
-    "LSGELUS180": lsgelus180,
-    "LSGELUS120": lsgelus120,
+#    "LSGELUS180": lsgelus180,
+#    "LSGELUS120": lsgelus120,
     'ELU': tf.nn.elu,
     'ReLU': tf.nn.relu,
     'Swish': tf.nn.swish,     
-    "LSGELUS210": lsgelus210,
-    "LSGELUS090": lsgelus090,
-    "LSGELUS240": lsgelus240,
-    "LSGELUS060": lsgelus060,
-    "LSGELUS270": lsgelus270,
+#    "LSGELUS210": lsgelus210,
+#    "LSGELUS090": lsgelus090,
+#    "LSGELUS240": lsgelus240,
+#    "LSGELUS060": lsgelus060,
+#    "LSGELUS270": lsgelus270,
 
-    "LSGELUS300": lsgelus300,  
-    "LSGELUS030": lsgelus030,
+#    "LSGELUS300": lsgelus300,  
+#    "LSGELUS030": lsgelus030,
 
     
 }
